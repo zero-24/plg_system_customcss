@@ -1,4 +1,4 @@
-# Custom CSS Plugin
+# CustomCSS Plugin
 
 This Joomla plugin lets you load a custom.css / custom.min.css when the template does not support that out of the box.
 

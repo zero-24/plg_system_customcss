@@ -15,6 +15,6 @@
 		<folder>language</folder>
 	</files>
 	<updateservers>
-		<server type="extension" name="Custom CSS Update Site">https://raw.githubusercontent.com/zero-24/plg_system_customcss/master/update.xml</server>
+		<server type="extension" name="CustomCSS Update Site">https://raw.githubusercontent.com/zero-24/plg_system_customcss/master/update.xml</server>
 	</updateservers>
 </extension>

@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <updates>
 	<update>
-		<name>JCCSS 3-4</name>
-		<description>Joomla custom.css Version 3-4</description>
+		<name>Custom CSS 3-4</name>
+		<description>Custom CSS Plugin</description>
 		<element>customcss</element>
 		<type>plugin</type>
 		<folder>system</folder>

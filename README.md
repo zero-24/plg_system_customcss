@@ -14,7 +14,7 @@ Thanks for your support!
 
 ## Feature
 
-his plugin checks whether a custom.css (or custom.min.css) file exists at /templates/"templatename"/css or /administrator/templates/"templatename"/css. If present, it will be loaded to the site.
+This plugin checks whether a custom.css (or custom.min.css) file exists at /templates/"templatename"/css or /administrator/templates/"templatename"/css. If present, it will be loaded to the site.
 - With a custom.css you can overwrite the template css files.
 - This file will not be touched by an update.
 - To use the plugin please activate it. Control Pannel --> Extensions --> Plugins --> System - Template custom.css.

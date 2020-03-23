@@ -8,7 +8,7 @@
 	<authorEmail>kontakt@jah-tz.de</authorEmail>
 	<authorUrl>www.jah-tz.de</authorUrl>
 	<version>3-4</version>
-	<description><![CDATA[PLG_SYSTEM_CUSTOMCSS_XML_DESCRIPTION]]></description>
+	<description>PLG_SYSTEM_CUSTOMCSS_XML_DESCRIPTION</description>
 	<scriptfile>script.php</scriptfile>
 	<files>
 		<filename plugin="customcss">customcss.php</filename>

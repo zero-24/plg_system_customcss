@@ -8,7 +8,6 @@
 
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Factory;
 use Joomla\CMS\Plugin\CMSPlugin;
 
 /**
@@ -29,7 +28,7 @@ class plgSystemcustomcss extends CMSPLugin
 	/**
 	 * Database object.
 	 *
-	 * @var    JDatabaseDriver
+	 * @var    DatabaseDriver
 	 * @since  3-4
 	 */
 	protected $db;
@@ -52,7 +51,7 @@ class plgSystemcustomcss extends CMSPLugin
 
 			return;
 		}
-		
+
 		if (is_file($customMin))
 		{
 			// Add Stylesheets custom.min.css

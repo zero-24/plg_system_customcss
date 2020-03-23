@@ -29,3 +29,11 @@ Any other plugin version I may have added to the download section don't get upda
 You have found an Issue, you have done a translation or have a question / suggestion regarding the plugin?
 [Open an issue in this repo](https://github.com/zero-24/plg_system_customcss/issues/new) or submit a pull request with the proposed changes.
 
+## Release steps
+
+- `build/build.sh`
+- `git commit -am 'prepare release CustomCSS 3-x'`
+- `git tag -s '3-X' -m 'CustomCSS 3-x'`
+- `git push origin --tags`
+- create the release on github
+- `git push origin master`

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="system" method="upgrade">
+	<name>plg_system_customcss</name>
+	<author>Tobias Zulauf</author>
+	<creationDate>20.05.2015</creationDate>
+	<copyright>Copyright (C) 2013 - 2015 Tobias Zulauf (jah-tz.de). All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>kontakt@jah-tz.de</authorEmail>
+	<authorUrl>www.jah-tz.de</authorUrl>
+	<version>3-3</version>
+	<description><![CDATA[PLG_SYSTEM_CUSTOMCSS_XML_DESCRIPTION]]></description>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename plugin="customcss">customcss.php</filename>
+		<folder>language</folder>
+	</files>
+	<updateservers>
+		<server type="collection" name="JCCSS Updates">http://www.jah-tz.de/downloads/extensions/jccss/update.xml</server>
+		<server type="extension" name="JCCSS Updates">http://www.jah-tz.de/downloads/extensions/jccss/sts/update.xml</server>
+	</updateservers>
+</extension>

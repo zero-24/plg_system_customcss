@@ -1,34 +1,39 @@
 <?php
 /**
- * @author      Tobias Zulauf (http://www.jah-tz.de)
- * @copyright   Copyright (C) 2013 - 2020 Tobias Zulauf (jah-tz.de). All rights reserved.
- * @license     GNU General Public License, http://www.gnu.org/copyleft/gpl.html
- * @version     3-3
+ * Joomla Custom CSS Plugin
  *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * @copyright  Copyright (C) 2013 - 2020 Tobias Zulauf All rights reserved.
+ * @license    http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License Version 2 or later
  */
 
-// No direct access.
 defined('_JEXEC') or die;
+
+use Joomla\CMS\Factory;
+use Joomla\CMS\Plugin\CMSPlugin;
 
 /**
  * Joomla! custom.css Plugin
  *
  * @since  3-1
  */
-class plgSystemcustomcss extends JPlugin
+class plgSystemcustomcss extends CMSPLugin
 {
+	/**
+	 * Application object.
+	 *
+	 * @var    CMSApplication
+	 * @since  3-4
+	 */
+	protected $app;
+
+	/**
+	 * Database object.
+	 *
+	 * @var    JDatabaseDriver
+	 * @since  3-4
+	 */
+	protected $db;
+
 	/**
 	 * Add, if exists, the custom.css file from the css folder from the template
 	 *
@@ -37,20 +42,23 @@ class plgSystemcustomcss extends JPlugin
 	 */
 	public function onBeforeCompileHead()
 	{
-		$app       = JFactory::getApplication();
-		$doc       = JFactory::getDocument();
-		$custom    = 'templates/' . $app->getTemplate() . '/css/custom.css';
-		$customMin = 'templates/' . $app->getTemplate() . '/css/custom.min.css';
+		$custom    = 'templates/' . $this->app->getTemplate() . '/css/custom.css';
+		$customMin = 'templates/' . $this->app->getTemplate() . '/css/custom.min.css';
 
 		if ((JDEBUG || !is_file($customMin)) && is_file($custom))
 		{
-			// Add Stylesheets
-			$doc->addStyleSheet($custom);
+			// Add Stylesheet custom.css
+			$this->doc->addStyleSheet($custom);
+
+			return;
 		}
-		elseif (is_file($customMin))
+		
+		if (is_file($customMin))
 		{
-			// Add Stylesheets
-			$doc->addStyleSheet($customMin);
+			// Add Stylesheets custom.min.css
+			$this->doc->addStyleSheet($customMin);
+
+			return;
 		}
 	}
 }

@@ -1,32 +1,38 @@
 <?php
 /**
- * @author      Tobias Zulauf (http://www.jah-tz.de)
- * @copyright   Copyright (C) 2013 - 2015 Tobias Zulauf (jah-tz.de). All rights reserved.
- * @license     GNU General Public License, http://www.gnu.org/copyleft/gpl.html
- * @version     3-3
+ * Joomla Custom CSS Plugin
  *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * @copyright  Copyright (C) 2013 - 2020 Tobias Zulauf All rights reserved.
+ * @license    http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License Version 2 or Later
  */
  
 defined('_JEXEC') or die;
 
-class plgSystemCustomCssInstallerScript
+use Joomla\CMS\Installer\InstallerScript;
+
+/**
+ * Installation class to perform additional changes during install/uninstall/update
+ *
+ * @since  3-2
+ */
+class plgSystemCustomCssInstallerScript extends InstallerScript
 {
 	/**
-	 * method to update the component
+	 * Extension script constructor.
 	 *
-	 * @return void
+	 * @since  3-4
+	 */
+	public function __construct()
+	{
+		// Define the minumum versions to be supported.
+		$this->minimumJoomla = '3.9';
+		$this->minimumPhp    = '7.0';
+	}
+
+	/**
+	 * Method to update the component
+	 *
+	 * @since  3-2
 	 */
 	public function update($parent) 
 	{
@@ -36,7 +42,7 @@ class plgSystemCustomCssInstallerScript
 	/**
 	 * method to run after an install/downloads/uninstall method
 	 *
-	 * @return void
+	 * @since  3-2
 	 */
 	public function postflight($type, $parent)
 	{
@@ -46,7 +52,7 @@ class plgSystemCustomCssInstallerScript
 	/**
 	 * Method to enable the Plugin
 	 *
-	 * @return void
+	 * @since  3-2
 	 */
 	private function enabelePlugin()
 	{

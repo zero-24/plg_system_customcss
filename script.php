@@ -5,7 +5,7 @@
  * @copyright  Copyright (C) 2013 - 2020 Tobias Zulauf All rights reserved.
  * @license    http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License Version 2 or later
  */
- 
+
 defined('_JEXEC') or die;
 
 use Joomla\CMS\Installer\InstallerScript;

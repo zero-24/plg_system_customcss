@@ -35,5 +35,5 @@ You have found an Issue, you have done a translation or have a question / sugges
 - `git commit -am 'prepare release CustomCSS 3-x'`
 - `git tag -s '3-X' -m 'CustomCSS 3-x'`
 - `git push origin --tags`
-- create the release on github
+- create the release on GitHub
 - `git push origin master`

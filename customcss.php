@@ -26,14 +26,6 @@ class plgSystemcustomcss extends CMSPLugin
 	protected $app;
 
 	/**
-	 * Database object.
-	 *
-	 * @var    DatabaseDriver
-	 * @since  3-4
-	 */
-	protected $db;
-
-	/**
 	 * Add, if exists, the custom.css file from the css folder from the template
 	 *
 	 * @return  void
@@ -47,7 +39,7 @@ class plgSystemcustomcss extends CMSPLugin
 		if ((JDEBUG || !is_file($customMin)) && is_file($custom))
 		{
 			// Add Stylesheet custom.css
-			$this->doc->addStyleSheet($custom);
+			$this->app->getDocument()->addStyleSheet($custom);
 
 			return;
 		}
@@ -55,7 +47,7 @@ class plgSystemcustomcss extends CMSPLugin
 		if (is_file($customMin))
 		{
 			// Add Stylesheets custom.min.css
-			$this->doc->addStyleSheet($customMin);
+			$this->app->getDocument()->addStyleSheet($customMin);
 
 			return;
 		}

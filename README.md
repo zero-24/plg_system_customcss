@@ -4,7 +4,7 @@ This Joomla plugin lets you load a custom.css / custom.min.css when the template
 
 ## Sponsoring and Donation
 
-You use this extension in an commercial context and / or want to support me and give something back?
+You want to support my work for the [development of my extensions](https://extensions.joomla.org/profile/profile/details/200189/) and my work for the [Joomla! Project](https://volunteers.joomla.org/joomlers/248-tobias-zulauf) you can give something back and sponsor me. 
 
 There are two ways to support me right now:
 - This extension is part of [Github Sponsors](https://github.com/sponsors/zero-24/) by sponsoring me, you help me continue my oss work for the [Joomla! Project](https://volunteers.joomla.org/joomlers/248-tobias-zulauf), write bug fixes, improving features and maintain my extensions.
@@ -31,7 +31,7 @@ You have found an Issue, you have done a translation or have a question / sugges
 
 ## Joomla! Extensions Directory (JED)
 
-This plugin can also been found in the Joomla! Extensions Directory: [CustomCSS by zero24](https://extensions.joomla.org/extension/access-a-security/customcss/)
+This plugin can also been found in the Joomla! Extensions Directory: [CustomCSS by zero24](https://extensions.joomla.org/extension/style-a-design/templating/customcss/)
 
 ## Release steps
 

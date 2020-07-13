@@ -12,7 +12,7 @@
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_system_customcss/releases/download/3-5/plg_system_customcss.zip</downloadurl>
 		</downloads>
-		<sha512>611e18a73e9611b786b95426c6dce5ffd7e49c8d753650124225b506f3e958090f76d89742e8838d066bb7817b53f6736bfb719b1375742322ed0b9d7e5ea057</sha512>
+		<sha512>56f129ac44a5632fdfbd0c7461b853579a50f51fae7b0687130981d80005398c532cc9674ad26b25462a8ce8a74be0bf5a3a069ca83bb4c460b0cbf7ec972fd0</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>

@@ -4,7 +4,7 @@ This Joomla plugin lets you load a custom.css / custom.min.css when the template
 
 ## Sponsoring and Donation
 
-You want to support my work for the [development of my extensions](https://extensions.joomla.org/profile/profile/details/200189/) and my work for the [Joomla! Project](https://volunteers.joomla.org/joomlers/248-tobias-zulauf) you can give something back and sponsor me. 
+You want to support my work for the [development of my extensions](https://extensions.joomla.org/profile/profile/details/200189/) and my work for the [Joomla! Project](https://volunteers.joomla.org/joomlers/248-tobias-zulauf) you can give something back and sponsor me.
 
 There are two ways to support me right now:
 - This extension is part of [Github Sponsors](https://github.com/sponsors/zero-24/) by sponsoring me, you help me continue my oss work for the [Joomla! Project](https://volunteers.joomla.org/joomlers/248-tobias-zulauf), write bug fixes, improving features and maintain my extensions.
@@ -24,10 +24,14 @@ This plugin checks whether a custom.css (or custom.min.css) file exists at /temp
 Please note that my update server only supports the latest version running the latest version of Joomla and atleast PHP 7.0.
 Any other plugin version I may have added to the download section don't get updates using the update server.
 
-## Issues / Translations
+## Issues / Pull Requests
 
-You have found an Issue, you have done a translation or have a question / suggestion regarding the plugin?
+You have found an Issue, have a question or you would like to suggest changes regarding this extension?
 [Open an issue in this repo](https://github.com/zero-24/plg_system_customcss/issues/new) or submit a pull request with the proposed changes.
+
+## Translations
+
+You want to translate this extension to your own language? Check out my [Crowdin Page for my Extensions](https://joomla.crowdin.com/zero-24) for more details. Feel free to [open an issue here](https://github.com/zero-24/plg_system_customcss/issues/new) on any question that comes up.
 
 ## Joomla! Extensions Directory (JED)
 
@@ -41,3 +45,13 @@ This plugin can also been found in the Joomla! Extensions Directory: [CustomCSS 
 - `git push origin --tags`
 - create the release on GitHub
 - `git push origin master`
+
+## Crowdin
+
+### Upload new strings
+
+`crowdin upload sources`
+
+### Download translations
+
+`crowdin download --skip-untranslated-files --ignore-match`

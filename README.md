@@ -19,6 +19,16 @@ This plugin checks whether a custom.css (or custom.min.css) file exists at /temp
 - This file will not be touched by an update.
 - To use the plugin please activate it. Control Pannel --> Extensions --> Plugins --> System - Template custom.css.
 
+## Configuration
+
+### Initial setup the plugin
+
+- [Download the latest version of the plugin](https://github.com/zero-24/plgsystemforce2fausergroup/releases/latest)
+- Install the plugin using `Upload & Install`
+- Enable the plugin `System - CustomCSS` form the plugin manager
+
+Now the inital setup is completed and you can create the files in the tempalte.
+
 ### Update Server
 
 Please note that my update server only supports the latest version running the latest version of Joomla and atleast PHP 7.0.

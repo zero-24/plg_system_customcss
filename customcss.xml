@@ -2,12 +2,12 @@
 <extension version="3.9" type="plugin" group="system" method="upgrade">
 	<name>plg_system_customcss</name>
 	<author>Tobias Zulauf</author>
-	<creationDate>13.07.2020</creationDate>
+	<creationDate>2021-07-10</creationDate>
 	<copyright>Copyright (C) 2013 - 2020 Tobias Zulauf (jah-tz.de). All rights reserved.</copyright>
 	<license>https://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>kontakt@jah-tz.de</authorEmail>
 	<authorUrl>www.jah-tz.de</authorUrl>
-	<version>3-5</version>
+	<version>3-6</version>
 	<description>PLG_SYSTEM_CUSTOMCSS_XML_DESCRIPTION</description>
 	<scriptfile>script.php</scriptfile>
 	<files>

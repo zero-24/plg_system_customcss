@@ -13,7 +13,7 @@ This plugin checks whether a custom.css (or custom.min.css) file exists at /temp
 
 ### Initial setup the plugin
 
-- [Download the latest version of the plugin](https://github.com/zero-24/plgsystemforce2fausergroup/releases/latest)
+- [Download the latest version of the plugin](https://github.com/zero-24/plg_system_customcss/releases/latest)
 - Install the plugin using `Upload & Install`
 - Enable the plugin `System - CustomCSS` form the plugin manager
 

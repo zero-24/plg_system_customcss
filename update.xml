@@ -1,18 +1,18 @@
 <?xml version="1.0" ?>
 <updates>
 	<update>
-		<name>CustomCSS 3-6</name>
+		<name>CustomCSS 3-7</name>
 		<description>CustomCSS Plugin</description>
 		<element>customcss</element>
 		<type>plugin</type>
 		<folder>system</folder>
 		<client>site</client>
-		<version>3-6</version>
+		<version>3-7</version>
 		<infourl title="CustomCSS Plugin">https://github.com/zero-24/plg_system_customcss</infourl>
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_system_customcss/releases/download/3-6/plg_system_customcss.zip</downloadurl>
 		</downloads>
-		<sha512>a2c25d50fe9dd0e6380eac2137f626cf7581f09b18b078efbe8591a75228b805131812c2d795ea3c0a11fb0a1e4d900a658cc9537377b5bada6d7e58329e5af3</sha512>
+		<sha512>0c2b5fd18db654ee93eaa07a44d65e9b4a1c63489c8ffedbfcf464bda6f561456fa33b7ad8b130c516c8f55338c0a5208d402d4a570e91e861cec9897dce411d</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>

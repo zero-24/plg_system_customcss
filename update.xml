@@ -40,7 +40,7 @@
 		<maintainer>Tobias Zulauf</maintainer>
 		<maintainerurl>https://www.jah-tz.de</maintainerurl>
 		<php_minimum>7.0.0</php_minimum>
-		<targetplatform name="joomla" version="4.[01234]]"/>
+		<targetplatform name="joomla" version="4.[01234]"/>
 	</update>
 	<update>
 		<name>CustomCSS 3-8</name>

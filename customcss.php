@@ -8,6 +8,7 @@
 
 defined('_JEXEC') or die;
 
+use Joomla\CMS\Factory;
 use Joomla\CMS\Plugin\CMSPlugin;
 
 /**
@@ -25,19 +26,21 @@ class plgSystemcustomcss extends CMSPLugin
 	 */
 	public function onBeforeCompileHead()
 	{
+		$app = Factory::getApplication();
+
 		// Custom css is only relevant on HTML pages
-		if ($this->getApplication()->getDocument()->getType() != 'html')
+		if ($app->getDocument()->getType() != 'html')
 		{
 			return;
 		}
 
-		$custom    = 'templates/' . $this->getApplication()->getTemplate() . '/css/custom.css';
-		$customMin = 'templates/' . $this->getApplication()->getTemplate() . '/css/custom.min.css';
+		$custom    = 'templates/' . $app->getTemplate() . '/css/custom.css';
+		$customMin = 'templates/' . $app->getTemplate() . '/css/custom.min.css';
 
 		if ((JDEBUG || !is_file($customMin)) && is_file($custom))
 		{
 			// Add Stylesheet custom.css
-			$this->getApplication()->getDocument()->addStyleSheet($custom);
+			$app->getDocument()->addStyleSheet($custom);
 
 			return;
 		}
@@ -45,24 +48,25 @@ class plgSystemcustomcss extends CMSPLugin
 		if (is_file($customMin))
 		{
 			// Add Stylesheets custom.min.css
-			$this->getApplication()->getDocument()->addStyleSheet($customMin);
+			$app->getDocument()->addStyleSheet($customMin);
 
 			return;
 		}
 
 		$templateLocation = 'site';
 
-		if ($this->getApplication()->isClient('administrator')) {
-            $templateLocation = 'administrator';
-        }
+		if ($app->isClient('administrator'))
+		{
+			$templateLocation = 'administrator';
+		}
 
-		$mediaCustom    = 'media/templates/' . $templateLocation . '/' . $this->getApplication()->getTemplate() . '/css/custom.css';
-		$mediaCustomMin = 'media/templates/' . $templateLocation . '/' . $this->getApplication()->getTemplate() . '/css/custom.min.css';
+		$mediaCustom    = 'media/templates/' . $templateLocation . '/' . $app->getTemplate() . '/css/custom.css';
+		$mediaCustomMin = 'media/templates/' . $templateLocation . '/' . $app->getTemplate() . '/css/custom.min.css';
 
 		if ((JDEBUG || !is_file($mediaCustomMin)) && is_file($mediaCustom))
 		{
 			// Add Stylesheet custom.css
-			$this->getApplication()->getDocument()->addStyleSheet($mediaCustom);
+			$app->getDocument()->addStyleSheet($mediaCustom);
 
 			return;
 		}
@@ -70,7 +74,7 @@ class plgSystemcustomcss extends CMSPLugin
 		if (is_file($mediaCustomMin))
 		{
 			// Add Stylesheets custom.min.css
-			$this->getApplication()->getDocument()->addStyleSheet($mediaCustomMin);
+			$app->getDocument()->addStyleSheet($mediaCustomMin);
 
 			return;
 		}

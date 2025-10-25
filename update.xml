@@ -1,18 +1,18 @@
 <?xml version="1.0" ?>
 <updates>
 	<update>
-		<name>CustomCSS 3-8</name>
+		<name>CustomCSS 3-9</name>
 		<description>CustomCSS Plugin</description>
 		<element>customcss</element>
 		<type>plugin</type>
 		<folder>system</folder>
 		<client>site</client>
-		<version>3-8</version>
+		<version>3-9</version>
 		<infourl title="CustomCSS Plugin">https://github.com/zero-24/plg_system_customcss</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_system_customcss/releases/download/3-8/plg_system_customcss.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_system_customcss/releases/download/3-9/plg_system_customcss.zip</downloadurl>
 		</downloads>
-		<sha512>ae7f5284d4f866ffd69616173912e13979d2c9a0943b0e326436366f388b1099d04c9da8271af68b333be1ca2a53a80335a5134d7463a2fa540c56c3cb59f84c</sha512>
+		<sha512>ca367e27c2d80cb5d58726024f80f479ac4edaf08d7597a08f294e12d46e6c9ae1e198e453e2cfda3788409d60e9234755af255d97e85dc395ef83e3b59e7904</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
@@ -22,18 +22,18 @@
 		<targetplatform name="joomla" version="3.(9|10)"/>
 	</update>
 	<update>
-		<name>CustomCSS 3-8</name>
+		<name>CustomCSS 3-9</name>
 		<description>CustomCSS Plugin</description>
 		<element>customcss</element>
 		<type>plugin</type>
 		<folder>system</folder>
 		<client>site</client>
-		<version>3-8</version>
+		<version>3-9</version>
 		<infourl title="CustomCSS Plugin">https://github.com/zero-24/plg_system_customcss</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_system_customcss/releases/download/3-8/plg_system_customcss.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_system_customcss/releases/download/3-9/plg_system_customcss.zip</downloadurl>
 		</downloads>
-		<sha512>ae7f5284d4f866ffd69616173912e13979d2c9a0943b0e326436366f388b1099d04c9da8271af68b333be1ca2a53a80335a5134d7463a2fa540c56c3cb59f84c</sha512>
+		<sha512>ca367e27c2d80cb5d58726024f80f479ac4edaf08d7597a08f294e12d46e6c9ae1e198e453e2cfda3788409d60e9234755af255d97e85dc395ef83e3b59e7904</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
@@ -43,24 +43,45 @@
 		<targetplatform name="joomla" version="4.[01234]"/>
 	</update>
 	<update>
-		<name>CustomCSS 3-8</name>
+		<name>CustomCSS 3-9</name>
 		<description>CustomCSS Plugin</description>
 		<element>customcss</element>
 		<type>plugin</type>
 		<folder>system</folder>
 		<client>site</client>
-		<version>3-8</version>
+		<version>3-9</version>
 		<infourl title="CustomCSS Plugin">https://github.com/zero-24/plg_system_customcss</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_system_customcss/releases/download/3-8/plg_system_customcss.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_system_customcss/releases/download/3-9/plg_system_customcss.zip</downloadurl>
 		</downloads>
-		<sha512>ae7f5284d4f866ffd69616173912e13979d2c9a0943b0e326436366f388b1099d04c9da8271af68b333be1ca2a53a80335a5134d7463a2fa540c56c3cb59f84c</sha512>
+		<sha512>ca367e27c2d80cb5d58726024f80f479ac4edaf08d7597a08f294e12d46e6c9ae1e198e453e2cfda3788409d60e9234755af255d97e85dc395ef83e3b59e7904</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
 		<maintainer>Tobias Zulauf</maintainer>
 		<maintainerurl>https://www.jah-tz.de</maintainerurl>
 		<php_minimum>7.0.0</php_minimum>
-		<targetplatform name="joomla" version="5.[0123]"/>
+		<targetplatform name="joomla" version="5.[01234]"/>
+	</update>
+	<update>
+		<name>CustomCSS 3-9</name>
+		<description>CustomCSS Plugin</description>
+		<element>customcss</element>
+		<type>plugin</type>
+		<folder>system</folder>
+		<client>site</client>
+		<version>3-9</version>
+		<infourl title="CustomCSS Plugin">https://github.com/zero-24/plg_system_customcss</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/zero-24/plg_system_customcss/releases/download/3-9/plg_system_customcss.zip</downloadurl>
+		</downloads>
+		<sha512>ca367e27c2d80cb5d58726024f80f479ac4edaf08d7597a08f294e12d46e6c9ae1e198e453e2cfda3788409d60e9234755af255d97e85dc395ef83e3b59e7904</sha512>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<maintainer>Tobias Zulauf</maintainer>
+		<maintainerurl>https://www.jah-tz.de</maintainerurl>
+		<php_minimum>7.0.0</php_minimum>
+		<targetplatform name="joomla" version="6.0"/>
 	</update>
 </updates>
